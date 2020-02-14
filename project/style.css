@@ -1,50 +1,105 @@
-html,body{
-height:100%;
-font-family: sans-serif;
+body {
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #333;
+    background-color: #fff;
 }
-.wrapper{
-max-width: 1170px;
-max-height: 95px;
-}
-.header{
-position: fixed;
- width: 100%;
- top:0;
- left:0;
- z-index: 50;
+
+li {
+    list-style-type: none;
+    margin: 0px 0px 0px 20px;
 }
 .container{
-max-width: 1140px;
-margin: 0, auto;
-padding: 0px 10px;
+    max-height: 95px;
+    display: flex;
+    margin: auto;
+    justify-content: space-between;
+   
 }
-.header : before{
-content: ;
-position: absolute;
-top:0;
-left:0;
-width: 100%;
-height: 100%;
-background-color: #333333;
+.navbar{
+    display: table;
+    justify-self: space-around  ;
+    max-height: 98px;
+    width: 100%;
+
 }
-.header__body{
-position: relative;
-z-index: 2;
-display:flex;
-justify-content: space-between;
-max-height: 95;
-align-items: center;
+.header{
+    position: fixed;
+    width: 100%;
+    top:0;
+    left:0;
+    z-index: 50;
 }
-.header__list{
+.nav-liststyle{
+    list-style-type: none;
+    padding:20px;
+    font: 13px , sans-cerif;
+    font: white;
+}
+.link_list{
+    display:flex;
+    margin: auto;
+}
+.content{
 display: flex;
 }
-.header__list li{
-  list-style:  none;
-  margin: 0px 0px 0px 20px;
+.promoblock{
+display: flex;
+
+margin: auto;
+height: 699px;
+flex-grow: 1;
+
 }
-.header__link{
-  color: #ffffff;
-  text-transform: uppercase;
-  font-size: 18px;
-  text-decoration: none;
+
+.promoblock h1{
+    font-size: 70px;
+    color: #fff;
+    margin: 0 0 15px;
+
+}
+.promoblock p{
+    font-size: 25px;    
+    color: #fff;
+    margin-bottom: 15px;
+}
+.btn-white-bg {
+    color: #515769;
+    background: #fff;
+    border-color: transparent;
+    border-width: 0;
+}
+.btn-theme {
+    position: relative;
+    display: inline-block;
+    background-image: none;
+    border-style: solid;
+    white-space: nowrap;
+    vertical-align: middle;
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+.btn-icon icon-control-play{
+    font-size: 15px;
+    font-weight: 600;
+    padding: 20px 30px;
+    
+}
+
+.cont{
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        align-items: center;
+        margin-left: auto;
+        margin-right: auto;
+        padding-right: 15px;
+        padding-left: 15px;
+ 
 }
